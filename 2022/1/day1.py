@@ -19,4 +19,3 @@ with open(path.join(__location__, "input"), mode="r", encoding="utf-8") as input
 
     top_three_sum = elfs[0] + elfs[1] + elfs[2]
     print("Sum of top three carrieres: " + str(top_three_sum))
-

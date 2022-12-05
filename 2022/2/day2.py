@@ -23,6 +23,7 @@ arg_parser.add_argument("-p", "--part", type=int)
 
 args = arg_parser.parse_args()
 
+
 def part1(input):
     score = 0
 
@@ -55,8 +56,9 @@ def part1(input):
                 cur_score = score_scissors + score_draw
 
         score += cur_score
-    
+
     print("Strategy given play " + str(score))
+
 
 def part2(input):
     score = 0
@@ -93,8 +95,9 @@ def part2(input):
                 cur_score = score_rock + score_win
 
         score += cur_score
-    
+
     print("Strategy given result " + str(score))
+
 
 with open(path.join(__location__, "input"), mode="r", encoding="utf-8") as input:
     if args.part == 1:
