@@ -9,7 +9,6 @@ arg_parser.add_argument("-p", "--part", type=int)
 args = arg_parser.parse_args()
 
 
-
 def part1(input):
     window_max = 4
     for line in input:
@@ -21,7 +20,7 @@ def part1(input):
 
             current_letter = line[i]
             if current_letter in seen:
-                del seen[0:seen.index(current_letter)+1]
+                del seen[0 : seen.index(current_letter) + 1]
 
             seen.append(current_letter)
 
@@ -37,7 +36,7 @@ def part2(input):
 
             current_letter = line[i]
             if current_letter in seen:
-                del seen[0:seen.index(current_letter)+1]
+                del seen[0 : seen.index(current_letter) + 1]
 
             seen.append(current_letter)
 
